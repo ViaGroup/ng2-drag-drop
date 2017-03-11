@@ -1,0 +1,16 @@
+
+
+<ul>
+    <li vd-draggable *ngFor="let item of inputTable" [dragOverClass]="'drag-over-border'" 
+    [dragData]="item" class="list-group-item"
+        [dragScope]="item.id">
+        {{item.name}}
+    </li>
+</ul>
+
+<div class="panel panel-info" vd-droppable [dragOverClass]="'drag-target-border'" 
+    [dropScope]="'id'" (onDrop)="onDrop($event)">
+    <ul>
+        <li *ngFor="let item of outpuTable">{{item.label}}</li>
+    </ul>
+</div>
