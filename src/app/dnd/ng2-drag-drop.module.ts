@@ -1,20 +1,24 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import { Draggable } from "./directives/draggable";
 import { Droppable } from "./directives/droppable";
 import { Ng2DragDropService } from "./services/ng2-drag-drop.service";
-import { MVDMultiselectDragComponent } from './multiselect-dnd';
+import { VDMultiselectDragComponent } from './multiselect-dnd';
 
 @NgModule({
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   declarations: [
     Draggable,
     Droppable,
-    MVDMultiselectDragComponent
+    VDMultiselectDragComponent
   ],
   exports: [
     Draggable,
     Droppable,
-    MVDMultiselectDragComponent
+    VDMultiselectDragComponent
   ],
   providers: [
     Ng2DragDropService

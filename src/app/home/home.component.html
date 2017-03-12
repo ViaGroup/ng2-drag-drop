@@ -1,8 +1,9 @@
+
 <vd-multiselect-drag></vd-multiselect-drag>
 <!--
 <div class="container">
   <div class="row">
-    <div class="col-xs-3">
+    <div class="col-xs-12">
 
       <div class="panel panel-primary">
         <div class="panel-heading">Drag Items from here</div>
@@ -26,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-12">
       <div class="panel panel-info" vd-droppable [dragOverClass]="'drag-target-border'"
        [dropScope]="'fruit'" (onDrop)="onFruitDrop($event)">
         <div class="panel-heading">Drop Fruits here</div>
@@ -35,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-12">
       <div class="panel panel-success" vd-droppable [dragOverClass]="'drag-target-border-green'" 
       [dropScope]="'vegetable'" (onDrop)="onVegetableDrop($event)">
         <div class="panel-heading">Drop Vegetables here</div>
@@ -44,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-12">
       <div class="panel panel-info" vd-droppable [dragOverClass]="'drag-target-border'" 
       [dropScope]="['fruit', 'vegetable']" (onDrop)="onAnyDrop($event)">
         <div class="panel-heading">Drop Anything here</div>
